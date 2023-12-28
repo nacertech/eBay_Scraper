@@ -16,7 +16,7 @@ const ScraperForm = () => {
     
         try {
             // Send the updated path in the API request
-            const response = await fetch(`http://localhost:8080/scrape?url=${encodeURIComponent(url)}&path=${encodeURIComponent(updatedPath)}`);
+            const response = await fetch(`https://lqase7.onrender.com/scrape?url=${encodeURIComponent(url)}&path=${encodeURIComponent(updatedPath)}`);
             setIsLoading(false);
             if (response.ok) {
                 const result = await response.json();
